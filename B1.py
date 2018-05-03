@@ -34,7 +34,7 @@ while True:
 
 	circle(shift, plt)
 
-	plt.pause(1e-50)
+	plt.pause(1e-20)
 	index = -1*step if index == step-1 else index+1
 
 plt.ioff()
