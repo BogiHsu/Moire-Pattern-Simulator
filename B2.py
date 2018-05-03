@@ -14,6 +14,9 @@ def circle(shift, plt):
 		r += 0.01*shift
 		plt.plot(r*x, r*y, '0.0')
 
+	plt.plot(10, -8+0.1*shift, color = 'green', marker = 'o')
+	plt.plot(10, -8, color = 'blue', marker = 'o')
+
 plt.figure(figsize=(10, 5))
 plt.ion()
 
@@ -34,9 +37,6 @@ while True:
 	plt.yticks([])
 
 	circle(shift, plt)
-	for i in range(20):
-		for j in range(-12, 12):
-			plt.plot(i+j, -8+shift, '0.0')
 
 	plt.pause(1e-20)
 	index = -1*step if index == step-1 else index+1
