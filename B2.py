@@ -34,6 +34,9 @@ while True:
 	plt.yticks([])
 
 	circle(shift, plt)
+	for i in range(20):
+		for j in range(-12, 12):
+			plt.plot(i+j, -8+shift, '0.0')
 
 	plt.pause(1e-20)
 	index = -1*step if index == step-1 else index+1
