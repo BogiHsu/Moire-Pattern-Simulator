@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def line(shift, plt):
-	print(shift)
+	return
 	
 
 plt.figure(figsize=(8, 8))
