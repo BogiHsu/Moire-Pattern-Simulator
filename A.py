@@ -34,7 +34,6 @@ step = 44
 index = -1*step
 while True:
 	angle = step-abs(index)+1
-	print(angle)
 	plt.cla()
 	plt.title('A')
 	plt.grid(True)
@@ -46,7 +45,8 @@ while True:
 	plt.ylim(0, window_length)
 	plt.yticks([])
 
-	line(angle, plt)
+	wave_length, delta_y = line(angle, plt)
+	print('angle:%02d,'%angle, 'lambda:%4.1f,'%wave_length, 'delta y:%6.3f'%delta_y)
 
 	plt.pause(1e-20)
 	index = -1*step if index >= step-1 else index+2
